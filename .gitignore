@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.cli-conda
+.env
+.env.*
+external/
+models/
+outputs/
+*.npz
+*.pt
+*.pth
+*.safetensors
+.distribution-source.json

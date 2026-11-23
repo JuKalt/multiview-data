@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multiview-data"
+version = "0.1.0"
+description = "A read-only interface to multiview human datasets"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["numpy>=1.24,<3", "Pillow>=10,<13"]
+
+[project.optional-dependencies]
+native = ["opencv-python-headless>=4.8,<5", "h5py>=3,<4"]
+
+[tool.setuptools.packages.find]
+include = ["multiview_data*"]
